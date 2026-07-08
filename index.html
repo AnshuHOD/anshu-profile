@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshu Hooda — AI Automation Engineer & Agentic Systems Builder</title>
+  <meta name="description" content="Portfolio of Anshu Hooda, an AI Automation Engineer and Agentic Systems Builder. Specializing in bilingual voice agents, multi-agent AI ecosystems, and workflow automation.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dynamic Ambient Background Orbs -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- Responsive Navigation Header -->
+  <nav>
+    <a href="#hero" class="nav-logo">Anshu Hooda</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    
+    <!-- Mobile Hamburger Toggle -->
+    <button class="hamburger" aria-label="Toggle mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <div class="live-dot"></div> Open to opportunities
+          </div>
+          <h1 class="hero-name">Anshu<br><span>Hooda</span></h1>
+          <p class="hero-title">🤖 AI Automation Engineer &nbsp;·&nbsp; Agentic Systems Builder</p>
+          <p class="hero-bio">
+            Final-year B.Tech AIML student from UIET, MDU Rohtak. I build intelligent systems that don't just automate tasks — they <strong>think, decide, and act</strong>. From deploying Swahili-speaking voice receptionists for Kenyan clinics to building multi-agent AI ecosystems, I turn complex problems into fun, production-ready systems!
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">8.4</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="bug-count-val">150+</span>
+              <span class="stat-label">Workflows Run</span>
+            </div>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">🚀 View My Work</a>
+            <a href="https://wa.me/918199820779?text=Hi%20Anshu!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn-wa">💬 WhatsApp Me</a>
+            <a href="https://linkedin.com/in/anshu-hooda-289524282" target="_blank" class="btn-outline">💼 LinkedIn</a>
+          </div>
+
+          <!-- Interactive AI Agent Console -->
+          <div class="agent-sandbox">
+            <div class="sandbox-header">
+              <span class="sandbox-title">🤖 Autonomous Agent Console</span>
+              <span class="sandbox-status"><span class="status-dot green"></span> Active Pool</span>
+            </div>
+            <div class="sandbox-terminal" id="terminal-log">
+              <div class="terminal-line system">[System] Initializing Agent Engine...</div>
+              <div class="terminal-line system">[System] Loading model: gemini-1.5-flash...</div>
+              <div class="terminal-line system">[Agent] Listening for workflow triggers...</div>
+            </div>
+            <div class="sandbox-controls">
+              <button class="sandbox-btn" id="run-bakery-btn">🍰 Run Bakery Bot</button>
+              <button class="sandbox-btn" id="run-voice-btn">🔊 Run Voice Receptionist</button>
+              <button class="sandbox-btn" id="run-lead-btn">🗺️ Run Lead Scraper</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <div class="profile-corner">
+              <div class="dot-online"></div>
+            </div>
+            <img src="assets/profile.jpg" class="profile-photo" alt="Anshu Hooda Photo">
+            <div class="profile-overlay">
+              <div class="profile-name-card">Anshu Hooda</div>
+              <div class="profile-role-card">AI Engineer &amp; Researcher</div>
+              <div class="profile-badges-row">
+                <span class="pbadge">🤖 Agentic AI</span>
+                <span class="pbadge">🔊 Voice AI</span>
+                <span class="pbadge">🎓 B.Tech AIML</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="floating-card fc-right">
+            <span class="fc-label">Current Role</span>
+            <span class="fc-value">Research Intern</span>
+            <span class="fc-label" style="margin-top: 4px;">IIITDM Kurnool</span>
+          </div>
+          
+          <div class="floating-card fc-left">
+            <span class="fc-label">Deployed Live</span>
+            <span class="fc-value">Kenya 🇰🇪 · 1.2s latency</span>
+            <span class="fc-label" style="margin-top: 4px;">Voice AI Agent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">The human behind the code</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm Anshu Hooda, an AI Automation Engineer and final-year B.Tech (AIML) student from UIET, Maharshi Dayanand University, Rohtak. My journey in AI isn't theoretical — every project I've built has touched real people, real hospitals, and real businesses.
+          </p>
+          <p>
+            I started as <strong>School Captain at JNV</strong>, leading 450+ students, and that leadership instinct followed me into tech — where I now lead as the primary debugger, architect, and problem-solver on complex production systems.
+          </p>
+          <p>
+            From deploying a bilingual voice receptionist in <strong>Nairobi, Kenya</strong> to identifying 25+ critical security bugs in a live healthcare system, I bridge the gap between AI theory and real-world impact. Currently researching at <strong>IIITDM Kurnool</strong> under a Ministry of Education-sponsored project exploring ancient Indian logic and modern CS.
+          </p>
+          <p>
+            I believe the best AI engineers aren't just coders — they're systems thinkers who love building cool things, learning from history, and having a blast while doing it!
+          </p>
+          
+          <ul class="info-list">
+            <li><span>📍</span><span>Rohtak, Haryana, India</span></li>
+            <li><span>📧</span><span>anshuh027@gmail.com</span></li>
+            <li><span>📱</span><span>+91 8199820779</span></li>
+            <li><span>🎓</span><span>B.Tech AIML · UIET, MDU Rohtak (2022–2026)</span></li>
+          </ul>
+        </div>
+        
+        <div>
+          <div class="about-card glass-card">
+            <h4>🎓 Education</h4>
+            <p>
+              <strong style="color: var(--text);">B.Tech in Artificial Intelligence &amp; Machine Learning</strong><br>
+              UIET, Maharshi Dayanand University, Rohtak · 2022–2026
+            </p>
+            <div class="cgpa-badge">✨ 8.4 CGPA</div>
+          </div>
+          
+          <div class="about-card glass-card">
+            <h4>🏆 School Background</h4>
+            <p>
+              <strong style="color: var(--text);">Jawahar Navodaya Vidyalaya (JNV)</strong><br>
+              Class XII · 91.4% · CBSE Board<br>
+              School Captain — led 450+ students
+            </p>
+          </div>
+          
+          <div class="about-card glass-card">
+            <h4>🌍 What Drives Me</h4>
+            <p>
+              Building AI systems that solve real problems — reducing hospital wait times in India, helping insurance companies respond to disasters faster, and exploring 2600-year-old parallels between ancient Indian logic and modern computing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Skills &amp; Tools</span>
+        <h2 class="section-title">My technical arsenal</h2>
+        <p class="section-subtitle">From agentic AI systems to voice agents — here's what I build with.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">🤖</div>
+            <span class="skill-cat-name">AI &amp; Automation</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Agentic AI</span>
+            <span class="skill-tag hot">n8n</span>
+            <span class="skill-tag hot">LLMs</span>
+            <span class="skill-tag hot">Prompt Engineering</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Make (Integromat)</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">NLP</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">🔊</div>
+            <span class="skill-cat-name">Voice AI</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Millis.ai</span>
+            <span class="skill-tag hot">Vapi</span>
+            <span class="skill-tag">Retell</span>
+            <span class="skill-tag">Plivo</span>
+            <span class="skill-tag">STT / TTS</span>
+            <span class="skill-tag">Latency Optimization</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">💻</div>
+            <span class="skill-cat-name">Programming</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Python</span>
+            <span class="skill-tag hot">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Webhooks</span>
+            <span class="skill-tag">JSON</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">🗄️</div>
+            <span class="skill-cat-name">Database &amp; Backend</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Supabase</span>
+            <span class="skill-tag hot">PostgreSQL</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Prisma ORM</span>
+            <span class="skill-tag">Row-Level Security</span>
+            <span class="skill-tag">Google Sheets</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">🔌</div>
+            <span class="skill-cat-name">APIs &amp; Integrations</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">WhatsApp Business API</span>
+            <span class="skill-tag">Google Maps API</span>
+            <span class="skill-tag">Telegram Bot API</span>
+            <span class="skill-tag">LinkedIn API</span>
+            <span class="skill-tag">Google Gemini</span>
+            <span class="skill-tag">YouTube API</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon">🧠</div>
+            <span class="skill-cat-name">ML &amp; QA</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">QA &amp; Bug Testing</span>
+            <span class="skill-tag">NABH/HIPAA</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Wbiztool</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Experience</span>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot current"></div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Research Intern — IKS Project</div>
+                <span class="exp-company">IIITDM Kurnool (MoE-Sponsored)</span>
+              </div>
+              <span class="exp-date active">May 2026 – Present</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Appointed under MoE-sponsored IKS project: "Nyaya Shaastra for Computer Science Engineers"</li>
+              <li>Researching parallels between ancient Indian logic (Nyaya, Vaisesika) and modern CS frameworks</li>
+              <li>Demonstrated that Nyaya Shaastra independently invented OOP, ML inference, and Formal Verification 2000+ years ago</li>
+              <li>Supervised by Dr. K.E. Srinivasa Desikan, IIITDM Kurnool</li>
+            </ul>
+            <div class="exp-impact">
+              <span class="impact-badge green">🔬 Active Research</span>
+              <span class="impact-badge">MoE Sponsored</span>
+              <span class="impact-badge">Ancient Logic ↔ Modern CS</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Agentic AI Intern</div>
+                <span class="exp-company">Avani Enterprises, Gurugram</span>
+              </div>
+              <span class="exp-date">Jan 2026 – Apr 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built bilingual AI voice agent for Fertility Point Hospital, Nairobi, Kenya — latency reduced to 1.2 seconds</li>
+              <li>Deployed complex agentic workflows achieving 18% reduction in operational latency</li>
+              <li>Engineered HospitalOS zero-paperwork patient workflow with auto UHID generation</li>
+              <li>Primary QA debugger — identified 25+ bugs including 5 critical P0 security vulnerabilities</li>
+              <li>Integrated WhatsApp Business API for real-time patient notifications</li>
+            </ul>
+            <div class="exp-impact">
+              <span class="impact-badge green">↓18% Latency</span>
+              <span class="impact-badge green">22% Less Manual Entry</span>
+              <span class="impact-badge">International Client 🇰🇪</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">AI Intern</div>
+                <span class="exp-company">Branding Pioneers</span>
+              </div>
+              <span class="exp-date">Jul 2025 – Sep 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built 10+ custom automation pipelines using n8n and Make — increased campaign speed by 25%</li>
+              <li>Integrated WhatsApp API via Wbiztool — boosted client engagement by 30%</li>
+              <li>Built Google Apps Script and Telegram Bot automations to eliminate manual data errors</li>
+            </ul>
+            <div class="exp-impact">
+              <span class="impact-badge green">↑25% Speed</span>
+              <span class="impact-badge green">↑30% Engagement</span>
+              <span class="impact-badge">10+ Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Projects</span>
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-subtitle">Real systems for real clients — not toy demos.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🎂🤖</span>
+            <div class="project-badges">
+              <span class="pbadge2 live">Live</span>
+              <span class="pbadge2 ai">AI Chatbot</span>
+              <span class="pbadge2 fullstack">Full Stack</span>
+            </div>
+          </div>
+          <div class="project-name">Hooda's Bakery — AI Order Automation & CRM</div>
+          <div class="project-desc">
+            Production-grade, highly automated e-commerce web application. Implements a Google Gemini-powered conversational ordering bot with 40-message context retention, a regex-based address parsing engine, automated payment routing via Razorpay, and a live secure React admin dashboard for CRM lead logging.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">React (Vite)</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB Atlas</span>
+            <span class="tech-tag">Gemini API</span>
+            <span class="tech-tag">Razorpay</span>
+            <span class="tech-tag">Nodemailer</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">40-Msg</span>
+              <span class="metric-key">Memory</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">100%</span>
+              <span class="metric-key">Automated</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">Live</span>
+              <span class="metric-key">Demos</span>
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); padding-top: 1rem;">
+            <a href="https://hoodas-bakery.vercel.app" target="_blank" style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.3rem; font-weight: 700;">🌐 Customer Site ↗</a>
+            <a href="https://hoodas-bakery-admin.vercel.app" target="_blank" style="color: var(--accent-light); font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none; display: flex; align-items: center; gap: 0.3rem; font-weight: 700;">📊 Admin Panel ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🏥🔊</span>
+            <div class="project-badges">
+              <span class="pbadge2 live">Live</span>
+              <span class="pbadge2 ai">Voice AI</span>
+              <span class="pbadge2 healthcare">Healthcare</span>
+            </div>
+          </div>
+          <div class="project-name">Bilingual AI Voice Receptionist</div>
+          <div class="project-desc">
+            Enterprise-grade voice agent for Fertility Point Hospital, Nairobi, Kenya. Handles calls in English &amp; Swahili, auto-books appointments, sends email summaries, and transfers complex cases to human staff via Plivo. Latency: 1.2 seconds.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Millis.ai</span>
+            <span class="tech-tag">Plivo</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">Email Automation</span>
+            <span class="tech-tag">Bilingual NLP</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">1.2s</span>
+              <span class="metric-key">Latency</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">2</span>
+              <span class="metric-key">Languages</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">24/7</span>
+              <span class="metric-key">Uptime</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🏨⚙️</span>
+            <div class="project-badges">
+              <span class="pbadge2 ai">Multi-Agent</span>
+              <span class="pbadge2 healthcare">SaaS</span>
+            </div>
+          </div>
+          <div class="project-name">HospitalOS — Multi-Tenant SaaS</div>
+          <div class="project-desc">
+            Cloud-native hospital management system. Built zero-paperwork patient registration, UHID auto-generation, and served as primary QA debugger — identifying 25+ bugs including 5 critical P0 security vulnerabilities. Integrated WhatsApp for patient notifications.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js 15</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Prisma</span>
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">WhatsApp API</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">40%</span>
+              <span class="metric-key">Registration</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">25+</span>
+              <span class="metric-key">Bugs Found</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🗺️🤖</span>
+            <div class="project-badges">
+              <span class="pbadge2 live">Autonomous</span>
+              <span class="pbadge2 ai">Lead Gen</span>
+            </div>
+          </div>
+          <div class="project-name">Local Business Intelligence Bot</div>
+          <div class="project-desc">
+            Zero-human-intervention pipeline extracting lead data (emails, contacts, ratings) by location using Google Maps API. Auto-dumps to CRM spreadsheet. Supports multi-city extraction — saving sales teams hours of manual research daily.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">Google Maps API</span>
+            <span class="tech-tag">Google Sheets</span>
+            <span class="tech-tag">Webhooks</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">0</span>
+              <span class="metric-key">Human Input</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">Multi-City</span>
+              <span class="metric-key">Coverage</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🔥📋</span>
+            <div class="project-badges">
+              <span class="pbadge2 live">Production</span>
+              <span class="pbadge2 ai">Intelligence</span>
+            </div>
+          </div>
+          <div class="project-name">Insurance Intelligence Pipeline</div>
+          <div class="project-desc">
+            Live system scanning Google News RSS feeds for fire/disaster events to accelerate insurance claim responses. Semantic lead scoring, real-time dashboard push. Saves 50+ hours of manual research monthly.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">RSS Feeds</span>
+            <span class="tech-tag">Semantic Analysis</span>
+            <span class="tech-tag">APIs</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">50h+</span>
+              <span class="metric-key">Saved/Month</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">Real-time</span>
+              <span class="metric-key">Monitoring</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">🏠💬</span>
+            <div class="project-badges">
+              <span class="pbadge2 ai">Voice Agent</span>
+              <span class="pbadge2 live">Built</span>
+            </div>
+          </div>
+          <div class="project-name">Real Estate Voice Agent</div>
+          <div class="project-desc">
+            Conversational voice AI for real estate lead qualification. Handles property inquiries, qualifies leads, retrieves live property info — ultra-low latency with 50+ custom dialogue prompts for natural conversation flow.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Millis.ai</span>
+            <span class="tech-tag">Vapi</span>
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">NLU</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">50+</span>
+              <span class="metric-key">Prompts</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">Low</span>
+              <span class="metric-key">Latency</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <span class="project-icon">📧🧠</span>
+            <div class="project-badges">
+              <span class="pbadge2 ai">LLM Powered</span>
+              <span class="pbadge2 live">Built</span>
+            </div>
+          </div>
+          <div class="project-name">Intelligent Email Classifier</div>
+          <div class="project-desc">
+            Handles 100+ emails/day. Google Gemini Pro classifies into Sales/Support/Spam with nuanced NLU — no keyword matching. Auto-routes to CRM, ticketing, or spam. Includes fallback human review queue for edge cases.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">Google Gemini Pro</span>
+            <span class="tech-tag">IMAP/Gmail</span>
+            <span class="tech-tag">Webhooks</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-val">100+</span>
+              <span class="metric-key">Emails/Day</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">3-way</span>
+              <span class="metric-key">Classification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Video Walkthrough Integration -->
+      <div class="video-walkthrough glass-card">
+        <div class="video-info">
+          <span class="section-tag">// Project Demos</span>
+          <h3>System Video Walkthrough</h3>
+          <p>
+            Watch a deep-dive walkthrough covering the core systems I have built to automate real-world clinical and operational workflows:
+          </p>
+          <ul class="video-bullets">
+            <li><strong>Bilingual Voice AI Agent (Kenya 🇰🇪):</strong> Supporting English-Swahili dialogue flows, scheduling logic, and latency optimizations.</li>
+            <li><strong>HospitalOS &amp; n8n Integrations:</strong> Eliminating clinic paperwork, setting up WhatsApp API alerts, and handling security QA.</li>
+          </ul>
+          <a href="https://www.loom.com/share/f008ac4fd7ab4a9fbfb7030a86930640" target="_blank" class="btn-primary">
+            <span>🎥 Watch on Loom</span>
+          </a>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.loom.com/embed/f008ac4fd7ab4a9fbfb7030a86930640?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Achievements</span>
+        <h2 class="section-title">Milestones &amp; Recognition</h2>
+      </div>
+      
+      <div class="ach-grid">
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🏆</span>
+          <div>
+            <div class="ach-title">4th Place — GeekHub Hackathon</div>
+            <div class="ach-sub">Secured 4th position in a competitive hackathon organized by GeekHub</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🔵</span>
+          <div>
+            <div class="ach-title">Microsoft MLSA Selection</div>
+            <div class="ach-sub">Selected via MLSA evaluation process for a technical interaction event at Microsoft</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🎓</span>
+          <div>
+            <div class="ach-title">8.4 CGPA — B.Tech AIML</div>
+            <div class="ach-sub">Consistently strong academic performance at UIET, MDU Rohtak</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">👑</span>
+          <div>
+            <div class="ach-title">School Captain — JNV</div>
+            <div class="ach-sub">Led 450+ student body, represented at district-level forums</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">📊</span>
+          <div>
+            <div class="ach-title">91.4% in Class XII CBSE</div>
+            <div class="ach-sub">Scored 91.4% in Senior Secondary Examination at JNV</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🌍</span>
+          <div>
+            <div class="ach-title">International Deployment 🇰🇪</div>
+            <div class="ach-sub">As a student, independently deployed a live AI voice agent for a hospital in Nairobi, Kenya</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🔬</span>
+          <div>
+            <div class="ach-title">MoE Research Internship</div>
+            <div class="ach-sub">Appointed under Ministry of Education IKS project at IIITDM Kurnool</div>
+          </div>
+        </div>
+        
+        <div class="ach-card glass-card">
+          <span class="ach-emoji">🐛</span>
+          <div>
+            <div class="ach-title">25+ Critical Bugs Identified</div>
+            <div class="ach-sub">Found 5 P0 security vulnerabilities in live healthcare system including NABH/HIPAA violations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Current Research</span>
+        <h2 class="section-title">Where ancient wisdom meets modern AI</h2>
+      </div>
+      
+      <div class="research-card glass-card">
+        <div class="research-tag">🟢 Ongoing · May 2026 – Present</div>
+        <div class="research-title">Nyaya Shaastra for Computer Science Engineers</div>
+        <div class="research-org">IIITDM Kurnool · Dr. K.E. Srinivasa Desikan · MoE IKS Project · NGCN Batch 2025–26</div>
+        <div class="research-desc">
+          This research demonstrates that every major Computer Science system — AI, Databases, Programming Languages, Formal Verification, and Knowledge Graphs — has a direct structural parallel in Nyaya Shaastra. Indian logicians formalized these reasoning structures 2000–2600 years before Computer Science existed. The work shows that Vaisesika (~600 BC) independently invented OOP, Navya-Nyaya (~1325 AD) invented Type Theory, and Pancavayava reasoning anticipated Hoare Logic by 2100 years.
+        </div>
+        
+        <div class="research-findings">
+          <div class="finding-item">
+            <div class="finding-concept">Anumana ↔ Modus Ponens</div>
+            <div class="finding-cs">Double-sided logical inference ≡ Formal Logic</div>
+          </div>
+          <div class="finding-item">
+            <div class="finding-concept">Vaisesika ↔ OOP</div>
+            <div class="finding-cs">Dravya/Guna/Karma ≡ Object/Attribute/Method</div>
+          </div>
+          <div class="finding-item">
+            <div class="finding-concept">Vyapti ↔ DB Constraints</div>
+            <div class="finding-cs">Universal invariable relation ≡ SQL CHECK</div>
+          </div>
+          <div class="finding-item">
+            <div class="finding-concept">Pancavayava ↔ Hoare Logic</div>
+            <div class="finding-cs">5-step reasoning ≡ Axiomatic {P}C{Q}</div>
+          </div>
+          <div class="finding-item">
+            <div class="finding-concept">Pariksha ↔ AI Testing</div>
+            <div class="finding-cs">Triple validation ≡ pytest/adversarial/formal check</div>
+          </div>
+          <div class="finding-item">
+            <div class="finding-concept">Upadhi ↔ Distribution Shift</div>
+            <div class="finding-cs">Hidden conditional bias ≡ production ML failure</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Let's Connect</span>
+        <h2 class="section-title">Open for opportunities</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div>
+          <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.85; margin-bottom: 2rem;">
+            Whether you're looking for an AI engineer to build your next intelligent system, want to discuss research, or just want to geek out about Agentic AI — reach out anytime.
+          </p>
+          
+          <div class="social-links">
+            <a href="https://wa.me/918199820779?text=Hi%20Anshu!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="social-item">
+              <div class="social-icon wa">💬</div>
+              <div>
+                <div class="social-name">WhatsApp</div>
+                <div class="social-handle">+91 8199820779 · Click to chat</div>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+            
+            <a href="https://linkedin.com/in/anshu-hooda-289524282" target="_blank" class="social-item">
+              <div class="social-icon li">💼</div>
+              <div>
+                <div class="social-name">LinkedIn</div>
+                <div class="social-handle">anshu-hooda-289524282</div>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+            
+            <a href="https://github.com/AnshuHOD" target="_blank" class="social-item">
+              <div class="social-icon gh">🐙</div>
+              <div>
+                <div class="social-name">GitHub</div>
+                <div class="social-handle">AnshuHOD</div>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+            
+            <a href="mailto:anshuh027@gmail.com" class="social-item">
+              <div class="social-icon em">📧</div>
+              <div>
+                <div class="social-name">Email</div>
+                <div class="social-handle">anshuh027@gmail.com</div>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+          </div>
+
+          <!-- Playful Cyber Mode Easter Egg Toggle -->
+          <div class="party-button-container">
+            <button class="btn-party" id="party-btn">⚡ Toggle Cyber Mode</button>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <h3>Anshu Hooda</h3>
+          <p>AI Automation Engineer · Agentic Systems · Voice AI · MoE Research Intern at IIITDM Kurnool</p>
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-dot"></div>
+              <span><strong>Location:</strong> Rohtak, Haryana, India</span>
+            </div>
+            <div class="contact-row">
+              <div class="contact-dot"></div>
+              <span><strong>Education:</strong> B.Tech AIML, UIET MDU Rohtak (2022–2026)</span>
+            </div>
+            <div class="contact-row">
+              <div class="contact-dot"></div>
+              <span><strong>CGPA:</strong> 8.4</span>
+            </div>
+            <div class="contact-row">
+              <div class="contact-dot"></div>
+              <span><strong>Status:</strong> <span style="color: var(--accent-green); font-weight: 600;">Open to full-time roles</span></span>
+            </div>
+          </div>
+          
+          <div class="cta-buttons">
+            <a href="https://wa.me/918199820779?text=Hi%20Anshu!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn-wa">💬 WhatsApp Me</a>
+            <a href="mailto:anshuh027@gmail.com" class="btn-primary">✉️ Email Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Built with passion · <span>Anshu Hooda</span> · AI Engineer &amp; Researcher · 2026</p>
+    <p style="margin-top: 0.5rem;">anshuh027@gmail.com · +91 8199820779 · Rohtak, Haryana</p>
+  </footer>
+
+  <!-- Script for Dynamic Behaviors -->
+  <script src="script.js"></script>
+</body>
+</html>
