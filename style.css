@@ -371,6 +371,7 @@ nav.scrolled {
   grid-template-columns: 1.25fr 0.75fr;
   gap: 4rem;
   align-items: center;
+  margin-top: 3.5rem; /* Push content down to avoid overlapping the fixed nav bar */
 }
 
 .hero-tag {
@@ -419,14 +420,12 @@ nav.scrolled {
 
 .hero-title {
   font-family: var(--font-mono);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--accent-cyan);
   font-weight: 700;
   margin-bottom: 1.8rem;
   animation: fadeUp 0.7s ease both 0.18s;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  line-height: 1.5;
 }
 
 .hero-bio {
