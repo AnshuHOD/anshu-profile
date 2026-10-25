@@ -714,24 +714,34 @@ nav.scrolled {
   position: relative;
   animation: fadeUp 0.8s ease both 0.2s;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.15rem;
+  width: 100%;
+  max-width: 360px;
 }
 
 .profile-frame {
-  width: 320px;
-  height: 400px;
+  width: 100%;
+  max-width: 350px;
+  height: 390px;
   border-radius: 32px;
   position: relative;
   overflow: hidden;
-  border: 2px solid rgba(139, 92, 246, 0.35);
-  background: radial-gradient(circle at 50% 25%, rgba(139, 92, 246, 0.28), rgba(16, 12, 34, 0.98)), #100c24;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(139, 92, 246, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.45);
+  background: 
+    radial-gradient(circle at 50% 32%, rgba(192, 132, 252, 0.45) 0%, rgba(139, 92, 246, 0.25) 35%, rgba(99, 102, 241, 0.12) 55%, transparent 75%),
+    radial-gradient(circle at 50% 100%, rgba(168, 85, 247, 0.2) 0%, transparent 60%),
+    linear-gradient(180deg, #181333 0%, #0d0a1e 100%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(168, 85, 247, 0.25);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .profile-frame:hover {
-  border-color: var(--accent);
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 45px rgba(139, 92, 246, 0.3);
+  border-color: rgba(216, 180, 254, 0.8);
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.7), 0 0 50px rgba(168, 85, 247, 0.38);
 }
 
 .profile-frame::before {
@@ -739,123 +749,136 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(180deg, transparent 65%, rgba(10, 8, 20, 0.8) 100%);
+  background: linear-gradient(180deg, transparent 72%, rgba(13, 10, 30, 0.92) 100%);
   pointer-events: none;
 }
 
 .profile-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center bottom;
   display: block;
   transition: transform 0.5s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
 }
 
-.profile-corner {
+.profile-frame:hover .profile-photo {
+  transform: scale(1.02);
+}
+
+/* SLEEK STATUS BADGE IN TOP CORNER */
+.profile-status-badge {
   position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
+  top: 14px;
+  right: 14px;
   z-index: 4;
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
   background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.profile-bottom-tag {
-  position: absolute;
-  bottom: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(14, 11, 28, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 30px;
-  padding: 0.4rem 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-  white-space: nowrap;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  z-index: 5;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #34d399;
 }
 
-.profile-bottom-tag .p-dot {
+.profile-status-badge .status-pulse {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #10b981;
   box-shadow: 0 0 8px #10b981;
+  animation: pulse-dot 2s infinite ease-in-out;
 }
 
-/* FLOATING SATELLITE CARDS */
-.floating-card {
-  position: absolute;
-  background: rgba(18, 14, 38, 0.94);
-  border: 1px solid rgba(139, 92, 246, 0.35);
-  border-radius: 18px;
-  padding: 0.75rem 1.15rem;
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* DEDICATED PROFILE META DECK BELOW PHOTO */
+.profile-meta-deck {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 5;
+}
+
+.meta-pill {
+  background: rgba(18, 14, 38, 0.85);
+  border: 1px solid rgba(168, 85, 247, 0.32);
+  border-radius: 16px;
+  padding: 0.75rem 1.1rem;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  z-index: 10;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 20px rgba(139, 92, 246, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 20px rgba(139, 92, 246, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  pointer-events: auto;
 }
 
-.floating-card:hover {
+.meta-pill:hover {
   border-color: var(--accent);
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.3);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 14px 35px rgba(139, 92, 246, 0.25);
+  background: rgba(24, 18, 50, 0.92);
 }
 
-.fc-top-right {
-  top: -15px;
-  right: -25px;
+.meta-pill-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 10px;
 }
 
-.fc-bottom-left {
-  bottom: -15px;
-  left: -25px;
+.meta-pill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
-.fc-label {
-  color: #a78bfa;
+.meta-pill-label {
+  color: #c084fc;
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 2px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-.fc-value {
-  color: white;
+.meta-pill-title {
+  color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.88rem;
-  display: block;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.fc-company {
+.meta-pill-sub {
   color: var(--text-muted);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  display: block;
-  margin-top: 2px;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* BUG SQUASHER MINI-GAME CARD */
@@ -1908,11 +1931,11 @@ footer p:last-child {
     order: -1;
   }
   .profile-frame {
-    width: 290px;
+    max-width: 320px;
     height: 360px;
   }
-  .fc-top-right, .fc-bottom-left {
-    display: none;
+  .profile-meta-deck {
+    max-width: 320px;
   }
   .about-grid, .contact-grid {
     grid-template-columns: 1fr;

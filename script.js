@@ -129,14 +129,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (runBakeryBtn) {
     runBakeryBtn.addEventListener("click", () => {
       const steps = [
-        "[BakeBot] Conversational memory loaded (40-msg capacity)...",
-        "[BakeBot] Listening for customer inputs on vercel portal...",
-        "[BakeBot] Customer: \"Need 2 dozen chocolate cupcakes delivery to Rohtak 124001 tomorrow.\"",
-        "[BakeBot] Triggering Regex-Based Address Auto-Parser...",
-        "[BakeBot] Parsed address output -> City: Rohtak, Pincode: 124001, Street: Default.",
-        "[BakeBot] Writing booking details to MongoDB Atlas...",
-        "[BakeBot] Generating secure Razorpay checkout link...",
-        "[BakeBot] Dispatched invoice & booking confirmation via SMTP/Nodemailer...",
+        "[BakeryAgent] Conversational memory loaded (40-msg capacity)...",
+        "[BakeryAgent] Listening for customer inputs on vercel portal...",
+        "[BakeryAgent] Customer: \"Need 2 dozen chocolate cupcakes delivery to Rohtak 124001 tomorrow.\"",
+        "[BakeryAgent] Triggering Regex-Based Address Auto-Parser...",
+        "[BakeryAgent] Parsed address output -> City: Rohtak, Pincode: 124001, Street: Default.",
+        "[BakeryAgent] Writing booking details to MongoDB Atlas...",
+        "[BakeryAgent] Generating secure Razorpay checkout link...",
+        "[BakeryAgent] Dispatched invoice & booking confirmation via SMTP/Nodemailer...",
         "[CRM] New customer lead logged on Live Admin dashboard."
       ];
       runAgentWorkflow("Hooda's Bakery Automation", steps);
