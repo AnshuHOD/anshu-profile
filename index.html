@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- External Stylesheet with Cache-Buster -->
-  <link rel="stylesheet" href="style.css?v=20261025_v2">
+  <link rel="stylesheet" href="style.css?v=20261025_v3">
 </head>
 <body>
   <!-- Dynamic Ambient Background Orbs -->
@@ -91,13 +91,20 @@
           <!-- Interactive AI Agent Console -->
           <div class="agent-sandbox">
             <div class="sandbox-header">
-              <span class="sandbox-title">🤖 Autonomous Agent Console</span>
+              <div class="sandbox-header-left">
+                <div class="window-dots">
+                  <span class="w-dot red"></span>
+                  <span class="w-dot yellow"></span>
+                  <span class="w-dot green"></span>
+                </div>
+                <span class="sandbox-title">⚡ Autonomous Agent Console</span>
+              </div>
               <span class="sandbox-status"><span class="status-dot green"></span> Active Pool</span>
             </div>
             <div class="sandbox-terminal" id="terminal-log">
               <div class="terminal-line system">[System] Initializing Agent Engine...</div>
-              <div class="terminal-line system">[System] Loading model: gemini-1.5-flash...</div>
-              <div class="terminal-line system">[Agent] Listening for workflow triggers...</div>
+              <div class="terminal-line system">[System] Model connected: gemini-1.5-flash</div>
+              <div class="terminal-line agent">[Agent] Ready for workflow triggers. Click an action below:</div>
             </div>
             <div class="sandbox-controls">
               <button class="sandbox-btn" id="run-bakery-btn">🍰 Run Bakery Bot</button>
@@ -112,28 +119,22 @@
             <div class="profile-corner">
               <div class="dot-online"></div>
             </div>
-            <img src="assets/profile.png?v=20261025" class="profile-photo" alt="Anshu Hooda Photo">
-            <div class="profile-overlay">
-              <div class="profile-name-card">Anshu Hooda</div>
-              <div class="profile-role-card">Implementation Analyst @ Jio Haptik</div>
-              <div class="profile-badges-row">
-                <span class="pbadge">💬 Conversational AI</span>
-                <span class="pbadge">⚡ Jio Haptik</span>
-                <span class="pbadge">🤖 Agentic AI</span>
-              </div>
+            <img src="assets/profile.png?v=20261025_v3" class="profile-photo" alt="Anshu Hooda Photo">
+            <div class="profile-bottom-tag">
+              <span class="p-dot"></span> Anshu Hooda &nbsp;·&nbsp; Jio Haptik
             </div>
           </div>
           
-          <div class="floating-card fc-right">
+          <div class="floating-card fc-top-right">
             <span class="fc-label">Current Role</span>
             <span class="fc-value">Implementation Analyst</span>
-            <span class="fc-label" style="margin-top: 4px;">Jio Haptik</span>
+            <span class="fc-company">Jio Haptik Technologies</span>
           </div>
           
-          <div class="floating-card fc-left">
+          <div class="floating-card fc-bottom-left">
             <span class="fc-label">Domain</span>
             <span class="fc-value">Conversational AI</span>
-            <span class="fc-label" style="margin-top: 4px;">Enterprise Chatbots</span>
+            <span class="fc-company">Enterprise Chatbots</span>
           </div>
         </div>
       </div>
